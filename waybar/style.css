@@ -1,20 +1,18 @@
-/* Colores fijos aplicados directamente */
 * {
-  border: 5;
+  border: none;
   border-radius: 0;
   min-height: 0;
   font-family: "JetBrainsMono NFM";
-  font-size: 18px;
+  font-size: 14px;
   padding: 0;
 }
 
-
 window#waybar {
-  /* Barra transparente */
+  /* background: #171d37; */
+  /* border-top: 1px solid #74B2DE; */
   background: rgba(0, 0, 0, 0);
 }
 
-/* Módulos generales */
 #disk,
 #scratchpad,
 #user,
@@ -31,14 +29,10 @@ window#waybar {
   margin: 0px 2px 5px 2px;
   padding: 2px 5px;
   background: #171d37;
-  /* background */
   color: #74B2DE;
-  /* color5 */
-  border: 1px solid #73B2DE;
-  border-radius: 5px;
+  border: 2px solid #D7B9B5;
 }
 
-/* Módulos específicos con menos padding */
 #disk,
 #temperature,
 #memory,
@@ -49,57 +43,42 @@ window#waybar {
   border: 0px;
 }
 
-/* Info group */
 #info {
   margin: 0px 2px 5px 2px;
   padding: 2px 0;
   background: #171d37;
-  /* background */
-  border: 1px solid #73B2DE;
-  border-radius: 5px;
+  border: 2px solid #D7B9B5;
 }
 
-/* Workspaces */
 #workspaces {
+  padding: 2px 0;
   margin: 0px 2px 5px 2px;
   background: #171d37;
-  /* background */
-  border: 1px solid #73B2DE;
-  border-radius: 5px;
+  border: 2px solid #D7B9B5;
 }
 
 #workspaces button {
   all: initial;
   padding: 2px 4px 2px 4px;
-  color: #73B2DE;
-  border-radius: 4px;
+  color: #74B2DE;
 }
 
 #workspaces button.urgent,
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  background-color: #D7B9B5;
-  /* color6 */
+  background-color: #171d37;
   padding: 2px 4px;
   color: #171d37;
-  /* background */
-  border-radius: 4px;
 }
 
-/* MPRIS */
 #mpris {
-  background: #73B2DE;
+  background: #74B2DE;
   color: #171d37;
-  /* background */
-  border-radius: 5px;
 }
 
-/* Ventana activa */
 #window {
-  background: #73B2DE;
-  color: #171d37;
-  /* background */
-  border: 0px;
-  border-radius: 5px;
+  background: #171d37;
+  border: 2px solid #D7B9B5;
+  color: #74B2DE;
 }

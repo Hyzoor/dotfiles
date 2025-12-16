@@ -1,0 +1,158 @@
+/* Ventana principal */
+window {
+    margin: 0;
+    border: 3px solid #588CC6;
+    background-color: #171d37;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Imagebox: imagen de fondo */
+#imagebox {
+    background-color: transparent;
+    background-image: url("/home/userhyzoor/Imágenes/Wallpaper/frierenMain.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Caja interna sobre la imagen */
+#inner-box {
+    background-color: rgba(23, 29, 55, 0.85);
+    /* semi-transparente */
+    border-radius: 20px;
+    padding: 12px 16px;
+    color: #c5c6cd;
+    font-weight: bold;
+}
+
+/* Caja externa */
+#outer-box {
+    margin: 0;
+    border: 3px solid #D7B9B5;
+    border-radius: 20px;
+    background-color: rgba(30, 30, 46, 0.85);
+    padding: 8px;
+}
+
+/* Input principal */
+#input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(30, 30, 46, 0.8);
+    /* semi-transparente sobre la imagen */
+    color: #c5c6cd;
+    font-weight: bold;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#input:focus {
+    background-color: rgba(36, 36, 70, 0.9);
+    box-shadow: 0 0 0 3px #588CC6;
+}
+
+/* Scroll */
+#scroll {
+    margin: 5px 0;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Iconos */
+#img {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#img:selected {
+    background-color: #588CC6;
+}
+
+/* Texto seleccionado */
+#text:selected {
+    background-color: #5785BA;
+    color: #171d37;
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+
+/* Entrada secundaria */
+#entry {
+    margin: 0;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #c5c6cd;
+}
+
+#entry:selected {
+    background-color: #588CC6;
+    color: #171d37;
+    border-radius: 8px;
+}
+
+/* Botones */
+#button {
+    padding: 7px;
+    border: 3px solid #588CC6;
+    border-radius: 10px;
+    background-color: rgba(23, 29, 55, 0.85);
+    color: #c5c6cd;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+#button:selected {
+    background-color: #FFB86C;
+    border-color: #588CC6;
+    color: #171d37;
+}
+
+/* Elementos normales / activos */
+#element {
+    spacing: 15px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #588CC6;
+    cursor: pointer;
+}
+
+#element:hover {
+    background-color: rgba(36, 36, 70, 0.8);
+}
+
+#element:selected {
+    background-color: rgba(30, 30, 46, 0.9);
+    color: #FFB86C;
+}
+
+/* Mensajes y textos */
+#message,
+#textbox,
+#error-message {
+    background-color: rgba(23, 29, 55, 0.85);
+    color: #588CC6;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+/* Inputbar */
+#inputbar {
+    background-color: rgba(30, 30, 46, 0.85);
+    color: #588CC6;
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+
+/* Prompt */
+#textbox-prompt-colon {
+    color: #588CC6;
+}
