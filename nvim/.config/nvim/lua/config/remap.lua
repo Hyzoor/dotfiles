@@ -4,8 +4,6 @@
 
 vim.g.mapleader = " "
 vim.keymap.set('', '<Space>', '<Nop>')
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
-vim.keymap.set('n', '<leader>pv', ":NvimTreeToggle<CR>", { desc = 'File explorer nvimtree' })
 
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
@@ -16,6 +14,15 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set("n", "<leader>ff", ":lua require('fzf-lua').files()<CR>") --search cwd
 vim.keymap.set("n", "<leader>fh", ":lua require('fzf-lua').files({ cwd = '~/' })<CR>") --search home
 vim.keymap.set("n", "<leader>g", ":lua require('fzf-lua').grep()<CR>") --grep
+
+
+-- Floating terminal
+vim.keymap.set("n", "<leader>t", ":lua require('FTerm').open()<CR>", { desc = "Open floating terminal"})	 
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') 
+
+-- File Explorer ( NVimTree )
+vim.keymap.set('n', '<leader>pv', ":NvimTreeToggle<CR>", { desc = 'File explorer nvimtree' })
+
 
 -- Keymaps i added
 vim.keymap.set("n", "<leader>s", ":%s//g<Left><Left>", { desc = 'Replace all'}) 

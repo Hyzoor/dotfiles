@@ -23,10 +23,11 @@ Plug('windwp/nvim-autopairs') --autopairs
 Plug('ibhagwan/fzf-lua') --fuzzy finder and grep
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('mfussenegger/nvim-lint') --async linter
+Plug('numToStr/FTerm.nvim') --floating terminal
+Plug('numToStr/FTerm.nvim') --floating terminal
 
 vim.call('plug#end')
 
--- Plug('numToStr/FTerm.nvim') --floating terminal
 -- Plug('folke/twilight.nvim') --surrounding dim
 -- Plug('lewis6991/gitsigns.nvim') --git
 -- Plug('numToStr/Comment.nvim') --easier comments
