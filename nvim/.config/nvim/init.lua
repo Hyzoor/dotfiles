@@ -22,11 +22,23 @@ Plug('nvim-tree/nvim-tree.lua') --file explorer
 Plug('windwp/nvim-autopairs') --autopairs 
 Plug('ibhagwan/fzf-lua') --fuzzy finder and grep
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
-Plug('mfussenegger/nvim-lint') --async linter
-Plug('numToStr/FTerm.nvim') --floating terminal
 Plug('numToStr/FTerm.nvim') --floating terminal
 
+-- Mason: Pack Manager for LSP servers, Formatters, Linters
+Plug('mason-org/mason.nvim') --mason
+-- Auto config for all lsp servers
+Plug('mason-org/mason-lspconfig.nvim') --mason lsp config
+
+
+-- Completition
+Plug('neovim/nvim-lspconfig')
+Plug('hrsh7th/cmp-nvim-lsp')
+Plug('hrsh7th/nvim-cmp')
+
 vim.call('plug#end')
+
+
+
 
 -- Plug('folke/twilight.nvim') --surrounding dim
 -- Plug('lewis6991/gitsigns.nvim') --git
@@ -40,6 +52,7 @@ vim.call('plug#end')
 
 require("config.remap")
 require("config.options")
+
 require("plugins.colorscheme")
 require("plugins.autopairs")
 require("plugins.lualine")
@@ -47,3 +60,15 @@ require("plugins.nvim-tree")
 require("plugins.render-markdown")
 require("plugins.treesitter")
 require("plugins.fzf-lua")
+require("plugins.mason")
+require("plugins.completition")
+
+
+
+
+
+
+
+
+
+

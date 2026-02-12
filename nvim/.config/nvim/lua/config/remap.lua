@@ -15,7 +15,6 @@ vim.keymap.set("n", "<leader>ff", ":lua require('fzf-lua').files()<CR>") --searc
 vim.keymap.set("n", "<leader>fh", ":lua require('fzf-lua').files({ cwd = '~/' })<CR>") --search home
 vim.keymap.set("n", "<leader>g", ":lua require('fzf-lua').grep()<CR>") --grep
 
-
 -- Floating terminal
 vim.keymap.set("n", "<leader>t", ":lua require('FTerm').open()<CR>", { desc = "Open floating terminal"})	 
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') 
@@ -25,17 +24,14 @@ vim.keymap.set('n', '<leader>pv', ":NvimTreeToggle<CR>", { desc = 'File explorer
 
 
 -- Keymaps i added
+vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write but one less key jeje"})
+vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit but one less key jeje"})
 vim.keymap.set("n", "<leader>s", ":%s//g<Left><Left>", { desc = 'Replace all'}) 
 vim.keymap.set("v", "<leader>i", function()
-  local pos = vim.fn.getpos(".")    -- guarda la posición actual
-  vim.cmd("normal! gg=G")           -- indent todo
-  vim.fn.setpos(".", pos)           -- vuelve a la posición guardada
+	local pos = vim.fn.getpos(".")    -- guarda la posición actual
+	vim.cmd("normal! gg=G")           -- indent todo
+	vim.fn.setpos(".", pos)           -- vuelve a la posición guardada
 end, { desc = "Indent all file and return to cursor" })
-
-
-
-
-
 
 
 
@@ -45,3 +41,8 @@ vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+
+
+
+
+
