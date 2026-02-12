@@ -27,9 +27,10 @@ vim.keymap.set('n', '<leader>pv', ":NvimTreeToggle<CR>", { desc = 'File explorer
 
 -- Buffers
 vim.keymap.set('n', '<leader>sv', ":vsplit<CR>", { desc = "Split vertical, new buffer"})
-vim.keymap.set("n", "<leader>q", ":BufferClose<CR>", { desc = "Close actual buffer"})
+vim.keymap.set("n", "<leader>q", ":bprevious | bdelete #<CR>", { desc = "Close and change to prev"})
+vim.keymap.set("n", "<leader>Q", ":q<CR>", { desc = "Close window, one less key"})
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer"})
-vim.keymap.set("n", "<S-h>", "bprevious<CR>", { desc = "Previous buffer"})
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer"})
 
 
 

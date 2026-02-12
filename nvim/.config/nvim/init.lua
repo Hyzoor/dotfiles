@@ -61,7 +61,6 @@ require("plugins.render-markdown")
 require("plugins.treesitter")
 require("plugins.fzf-lua")
 require("plugins.mason")
-require("plugins.completition")
 
 
 
