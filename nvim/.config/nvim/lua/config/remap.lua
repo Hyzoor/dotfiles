@@ -12,6 +12,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write but one less"})
 vim.keymap.set("n", "<leader>s", ":%s//g<Left><Left>", { desc = 'Replace all'}) 
+vim.keymap.set('n', '<leader>F', vim.lsp.buf.format, { desc = "Format buffer"})
+
+vim.keymap.set('n', '<leader>p', switch_theme ,{ desc = "Switch between colorschemes"})
 
 -- Fuzzy finder Mappings
 vim.keymap.set("n", "<leader>ff", ":lua require('fzf-lua').files()<CR>") --search cwd
@@ -23,24 +26,16 @@ vim.keymap.set("n", "<leader>t", ":lua require('FTerm').open()<CR>", { desc = "O
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') 
 
 -- File Explorer ( NVimTree )
-vim.keymap.set('n', '<leader>pv', ":NvimTreeToggle<CR>", { desc = 'File explorer nvimtree' })
+vim.keymap.set('n', '<leader>e', ":NvimTreeToggle<CR>", { desc = 'File explorer nvimtree' })
 
 -- Buffers
-vim.keymap.set('n', '<leader>sv', ":vsplit<CR>", { desc = "Split vertical, new buffer"})
 vim.keymap.set("n", "<leader>q", ":bprevious | bdelete #<CR>", { desc = "Close and change to prev"})
-vim.keymap.set("n", "<leader>Q", ":q<CR>", { desc = "Close window, one less key"})
+vim.keymap.set("n", "<leader>Q", ":q!<CR>", { desc = "Close window, one less key"})
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer"})
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer"})
 
-
-
-
--- Remap im trying
-vim.keymap.set("v", "<leader>i", function()
-	local pos = vim.fn.getpos(".")    -- guarda la posición actual
-	vim.cmd("normal! gg=G")           -- indent todo
-	vim.fn.setpos(".", pos)           -- vuelve a la posición guardada
-end, { desc = "Indent all file and return to cursor" })
+-- Testing keymaps
+vim.keymap.set('n', '<leader>sv', ":vsplit<CR>", { desc = "Split vertical, new buffer"})
 
 
 

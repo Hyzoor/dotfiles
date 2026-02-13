@@ -12,9 +12,10 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
-Plug('shaunsingh/nord.nvim', { ['as'] = 'nord'}) 
 Plug('ellisonleao/gruvbox.nvim', { ['as'] = 'gruvbox' })
 Plug('catppuccin/nvim', { ['as'] = 'catppuccin' }) 
+Plug('uZer/pywal16.nvim', { [ 'as' ] = 'pywal16' }) 
+
 Plug('nvim-lualine/lualine.nvim') --statusline
 Plug('nvim-tree/nvim-web-devicons') --pretty icons
 Plug('nvim-treesitter/nvim-treesitter') --improved syntax
@@ -24,8 +25,10 @@ Plug('ibhagwan/fzf-lua') --fuzzy finder and grep
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('numToStr/FTerm.nvim') --floating terminal
 
+
 -- Mason: Pack Manager for LSP servers, Formatters, Linters
 Plug('mason-org/mason.nvim') --mason
+
 -- Auto config for all lsp servers
 Plug('mason-org/mason-lspconfig.nvim') --mason lsp config
 
@@ -50,8 +53,10 @@ vim.call('plug#end')
 
 -- Config and Plugins files
 
+require("config.theme")
 require("config.remap")
 require("config.options")
+require("config.autocmd")
 
 require("plugins.colorscheme")
 require("plugins.autopairs")
@@ -61,13 +66,6 @@ require("plugins.render-markdown")
 require("plugins.treesitter")
 require("plugins.fzf-lua")
 require("plugins.mason")
+require("plugins.completition")
 
-
-
-
-
-
-
-
-
-
+load_theme()
