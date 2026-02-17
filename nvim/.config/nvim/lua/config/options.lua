@@ -2,7 +2,7 @@
 --                OPTIONS
 -- ======================================
 
-vim.o.termguicolors = false
+vim.o.termguicolors = true
 vim.g.have_nerd_font = true
 vim.o.number = true
 vim.o.relativenumber = true
@@ -15,6 +15,7 @@ vim.o.softtabstop = 4
 vim.o.showmode = false 
 vim.o.clipboard = 'unnamedplus';
 
+vim.o.smartindent = true;
 vim.o.breakindent = true
 vim.o.hlsearch = false
 
