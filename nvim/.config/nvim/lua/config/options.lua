@@ -44,3 +44,12 @@ vim.o.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
 vim.o.confirm = true
+
+
+vim.diagnostic.config({
+  virtual_text = true,        -- muestra el error directamente en la línea
+  signs = true,               -- muestra iconos en la columna de signos
+  underline = true,           -- subraya la parte del código con error
+  update_in_insert = false,   -- evita que aparezcan errores mientras escribes
+})
+

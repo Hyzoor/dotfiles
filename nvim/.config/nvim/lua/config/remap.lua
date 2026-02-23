@@ -37,5 +37,6 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer"})
 -- Testing keymaps
 vim.keymap.set('n', '<leader>sv', ":vsplit<CR>", { desc = "Split vertical, new buffer"})
 
+vim.keymap.set('n', '<leader>z', ":ZenMode<CR>", { desc = "Enable/Disable ZenMode"})
 
 

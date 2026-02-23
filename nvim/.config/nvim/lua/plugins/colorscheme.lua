@@ -6,6 +6,11 @@ require("catppuccin").setup({
            sidebars = "transparent",
            floats = "transparent",
         },
+
+		float = {
+			transparent = true,
+			solid = false,
+		}
 })
 
 
@@ -32,3 +37,5 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = true,
 })
+
+
