@@ -32,3 +32,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Created by `pipx` on 2026-02-28 08:38:48
 export PATH="$PATH:/home/hyzoor/.local/bin"
+
+alias terminal="kitty"
+alias gnome-terminal="kitty"
+
