@@ -13,7 +13,6 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 
 -- ColorSchemes
-Plug('ellisonleao/gruvbox.nvim', { ['as'] = 'gruvbox' })
 Plug('catppuccin/nvim', { ['as'] = 'catppuccin' }) 
 Plug('uZer/pywal16.nvim', { [ 'as' ] = 'pywal16' }) 
 
@@ -34,11 +33,6 @@ Plug('mason-org/mason.nvim') --mason
 -- Auto config for all lsp servers
 Plug('mason-org/mason-lspconfig.nvim') --mason lsp config
 
--- Zen Mode
-Plug('folke/zen-mode.nvim') --zen mode
-
-
-
 -- Completition
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/cmp-nvim-lsp')
@@ -46,15 +40,11 @@ Plug('hrsh7th/nvim-cmp')
 
 vim.call('plug#end')
 
-
-
-
 -- Plug('folke/twilight.nvim') --surrounding dim
 -- Plug('lewis6991/gitsigns.nvim') --git
 -- Plug('numToStr/Comment.nvim') --easier comments
 -- Plug('norcalli/nvim-colorizer.lua') --color highlight
 -- Plug('goolord/alpha-nvim') --pretty startup
-
 
 
 -- Config and Plugins files
